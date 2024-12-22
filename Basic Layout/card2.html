@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .card {
+            width: 330px;
+            height: 520px;
+            border-radius: 5%;
+            background-color: white;
+            padding: 5px;
+            border: 1px solid rgb(195, 198, 201);
+
+        }
+        img {
+            width: 100%;
+            height: 250px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8%;
+
+        }
+        .tags {
+            display: inline-flex;
+            gap: 13px;
+            margin-left: 17px;
+            font-size: 12px;
+        }
+        .nature {
+            border: 1px solid grey;
+            border-radius: 15px;
+            padding: 5px 5px;
+        }
+        .lake {
+            border: 1px solid grey;
+            border-radius: 13px;
+            padding: 5px 7px;
+        }
+        footer {
+            text-align: center;
+
+        }
+        .text {
+            margin: 15px;
+        }
+        button{
+            padding: 10px 13px;
+            border-radius: 15px;
+            border: 0px;
+            background-color: rgb(197, 227, 247);
+            color: #3d77d4
+            cursor pointer;
+        }
+        button:hover {
+            background-color: rgb(128, 201, 250);
+            color: #ffffff
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <img src = "https://www.istockphoto.com/resources/images/HomePage/FourPack/C2-Photos-iStock-1356197695.jpg"/>
+        <div class="tags">
+            <div class="nature">
+                Nature
+            </div>
+            <div class="lake">
+                Lake
+            </div>
+        </div>
+        <div class="text">
+            <h2>Vaibhav</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fugiat alias neque non, harum, molestiae quos, inventore facilis error accusantium nam asperiores voluptatibus ut saepe in quae nihil officiis odit.</p>
+        </div>
+        <footer><button>Read More</button></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+            box-sizing: border-box;
+        }
+        main {
+            width : 1200px;
+            height: auto;
+            margin: 0 auto;
+            display : grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 50px 150px 350px 50px;
+            gap : 10px;
+            text-align: center;
+        }
+        #logo, #nav, #header, footer {
+            background-color: #999;
+        }
+        #section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap : 10px;
+        }
+        .first, .second, .third {
+            background-color: #999;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <div id="nav"><h2>Navigation</h2></div>
+        <div id="header"><h2>Header / Banner</h2></div>
+        <div id="section">
+            <div class="first"><h2>First</h2></div>
+            <div class="second"><h2>Second</h2></div>
+            <div class="third"><h2>Third</h2></div>
+        </div>
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
